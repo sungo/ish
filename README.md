@@ -2,13 +2,9 @@
 
 The ish, yet another Corne-ish keyboard
 
-![](images/front_model.png)
+![](images/v0.0.1/pcb.jpg)
 
-![](images/back_model.png)
-
-# Disclaimer
-
-At time of writing, I've not physically held one of these in my hands so the design may be all jacked up. But an order is in so we'll know "soon".
+![](images/v0.0.1/built.jpg)
 
 # Why?
 
@@ -17,6 +13,16 @@ Well, gotta learn kicad somehow and the Corne is one of my favorite boards. Like
 To be clear before we get started, this is a Choc only build that is specifically designed for the [nice!nano](https://nicekeyboards.com/nice-nano) and [ZMK](https://zmk.dev) (Technically you can slot an Elite-C or something into the PCB but the battery and lack of connectivity between the halves makes that a silly thing to do.)
 
 Also to be clear, this is built with me, sungo, in mind. I will be super thrilled if other folks like it but this board is to make me happy and serve as a learning experience.
+
+# v0.0.1
+
+The first build is back from the manufacturers and I have thoughts. See [the build notes](docs/v0.0.1.md) for more info. But tl;dr: the v0.0.1 tag is perfectly serviceable but the battery hookup is slightly obnoxious. But it all works fine. I do suggest the corne v2 key switch plate, entirely because it’s built for Choc. The v3 plates work but are super tight getting the switches in.
+
+A v0.1.0 design is underway.
+
+## BOM
+
+TBD
 
 # Goals
 
