@@ -10,7 +10,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp e77fffa8-53b2-45b3-aa1a-3761372a147e)
   )
-  (fp_text user "v0.0.1" (at -1.89 0.38 180 unlocked) (layer "B.SilkS")
+  (fp_text user "v${REVISION}" (at -1.89 0.38 180 unlocked) (layer "B.SilkS")
     (effects (font (size 0.75 0.75) (thickness 0.125)) (justify left mirror))
     (tstamp 3ea3d768-23d1-437e-83d9-feb946bfafe4)
   )
