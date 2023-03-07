@@ -1,0 +1,13 @@
+(footprint "Standoff Hole" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp e16a4d04-7739-44a7-bff7-868aa16f919b)
+  )
+  (fp_text value "Standoff Hole" (at 0 1 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 5c16a691-18c4-425c-bd3a-cd3f2a0c7515)
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 4.3 4.3) (drill 4.3) (layers "F&B.Cu" "*.Mask") (tstamp 5d15e2f5-db93-45a1-b52f-bb957c313791))
+)
