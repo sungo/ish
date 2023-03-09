@@ -2,9 +2,9 @@
 
 The ish, yet another Corne-ish keyboard
 
-![](images/v0.0.1/pcb.jpg)
+![](images/v0.1.0/IMG_0128.jpg)
 
-![](images/v0.0.1/built.jpg)
+![](images/v0.1.0/IMG_0123.jpg)
 
 # Why?
 
@@ -14,11 +14,17 @@ To be clear before we get started, this is a Choc only build that is specificall
 
 Also to be clear, this is built with me, sungo, in mind. I will be super thrilled if other folks like it but this board is to make me happy and serve as a learning experience.
 
-# v0.0.1
+# v0.1.0
 
-The first build is back from the manufacturers and I have thoughts. See [the build notes](docs/v0.0.1.md) for more info. But tl;dr: the v0.0.1 tag is perfectly serviceable but the battery hookup is slightly obnoxious. But it all works fine. I do suggest the corne v2 key switch plate, entirely because it’s built for Choc. The v3 plates work but are super tight getting the switches in.
+The v0.1.0 features a revamped battery system and, because I was bored, curvey traces. But mostly the battery thing.
 
-A v0.1.0 design is underway.
+As you can see in the images below, the battery hookup has been moved to solder pads and a cutout has been added to aid hiding and securing the wires.
+
+This is essentially the final design. A v1.0.0 has been ordered that moves the solder pads down a little bit and forgoes the curvy traces since the plugin does not currently work with kicad 7.
+
+![](images/v0.1.0/IMG_0126.jpg)
+
+![](images/v0.1.0/IMG_0130.jpg)
 
 ## BOM
 
@@ -26,7 +32,7 @@ TBD
 
 # Goals
 
-* a choc build based on the Corne v3 platform. The v3 simplified the board a great deal, particularly by making it not reversible. 
+* a choc build based on the Corne v3 platform. The v3 simplified the board a great deal, particularly by making it not reversible.
 * Wireless first. Built specifically for the nice!nano, the ish comes with battery wiring and a power switch
 * Fuck LEDs. I don't use LEDs or OLEDs on my battery builds so they're gone
 * All going well, don't change anything that would break compatibility with the Corne v3 plates
@@ -52,11 +58,11 @@ I put a bunch of text and links on the panelization. The board itself has a vers
 
 There are very few traces on the top, just a few I needed to jump over traces that can't be moved. There is one trace on the top of left hand board that is the least complicated route for the reset line. I'd like to find another route for that but the other options are crazy complicated.
 
-There are a lot of traces on the ish, by necessity, and keeping them all to the back led to a very crowded board. I did my best to limit the risk of crapping up traces on the back during the build but the area around the MCU is so tight that things aren't perfect. 
+There are a lot of traces on the ish, by necessity, and keeping them all to the back led to a very crowded board. I did my best to limit the risk of crapping up traces on the back during the build but the area around the MCU is so tight that things aren't perfect.
 
 ### Soldering Limits
 
-There are no solder points on the top of the board. All the holes are masked off as well to keep anyone from getting a funny idea. 
+There are no solder points on the top of the board. All the holes are masked off as well to keep anyone from getting a funny idea.
 
 Keeping solder points and pads away from the edge led to a complication discussed below, needing the switches to be in different orientations on the separate halves.
 
@@ -79,7 +85,7 @@ The original Corne is licensed under the MIT license so the ish is as well.
 
 - - -
 
-Copyright © 2022 sungo
+Copyright © 2022-2023 sungo
 
 Corne v3, kbd library © 2019-2022 foostan
 
