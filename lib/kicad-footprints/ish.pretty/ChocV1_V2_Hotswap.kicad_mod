@@ -64,12 +64,12 @@
   (pad "" np_thru_hole circle (at 5.5 0 270) (size 1.9 1.9) (drill 1.9) (layers "F&B.Cu" "*.Mask") (tstamp c1c8239c-ff3f-4321-87f6-05e3f567b5f0))
   (pad "1" smd rect (at -3.3 -5.9) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 8f63c31e-aad8-4e92-b77f-3361c2bf24c7))
   (pad "2" smd rect (at 8.3 -3.7) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 09931610-aed3-488e-8555-66f0bd1f74e2))
-  (model "${KIPRJMOD}/lib/step/kailh_choc.step"
+  (model "${KIPRJMOD}/../lib/step/kailh_choc.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
-  (model "${KIPRJMOD}/lib/step/PG1350-socket.STEP"
+  (model "${KIPRJMOD}/../lib/step/PG1350-socket.STEP"
     (offset (xyz 9.9 5.75 -1.86))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
