@@ -2,33 +2,36 @@
 
 The ish, yet another Corne-ish keyboard
 
-![](images/v0.1.0/IMG_0128.jpg)
+![](images/built.jpg)
 
-![](images/v0.1.0/IMG_0123.jpg)
+![](images/pcb_front.jpg)
 
-# Why?
+![](images/pcb_back.jpg)
+
+# What
+
+The ish is a Corne-ish split 42-key keyboard, specifically designed for the [nice!nano](https://nicekeyboards.com/nice-nano), bluetooth/battery operation, and [ZMK](https://zmk.dev).
+
+The ish has the following features/anti-features:
+
+- Choc v1 key switches _only_
+- Keys are Cherry MX spaced (I have fat fingers)
+- Designed for battery and bluetooth, via the nice!nano controller
+- Does _not_ have LEDs, underglow or otherwise, nor OLED displays
+- Relatively easy to build
+- Based on the Corne v3
+- Supports [ZMK](https://zmk.dev) exclusively
+
+
+## Why
 
 Well, gotta learn kicad somehow and the Corne is one of my favorite boards. Like all keyboard people though, I have capital-T Thoughts about the Corne so why not learn kicad by tweaking the Corne.
 
-To be clear before we get started, this is a Choc only build that is specifically designed for the [nice!nano](https://nicekeyboards.com/nice-nano) and [ZMK](https://zmk.dev) (Technically you can slot an Elite-C or something into the PCB but the battery and lack of connectivity between the halves makes that a silly thing to do.)
-
 Also to be clear, this is built with me, sungo, in mind. I will be super thrilled if other folks like it but this board is to make me happy and serve as a learning experience.
 
-# v0.1.0
+## Just give me the gerbers, dammit
 
-The v0.1.0 features a revamped battery system and, because I was bored, curvey traces. But mostly the battery thing.
-
-As you can see in the images below, the battery hookup has been moved to solder pads and a cutout has been added to aid hiding and securing the wires.
-
-This is essentially the final design. A v1.0.0 has been ordered that moves the solder pads down a little bit and forgoes the curvy traces since the plugin does not currently work with kicad 7.
-
-![](images/v0.1.0/IMG_0126.jpg)
-
-![](images/v0.1.0/IMG_0130.jpg)
-
-## BOM
-
-TBD
+The gerbers for the v1 are available [here](gerbers/ish-1.0.0-gerbers.zip). Top and bottom plates [are available](gerbers/) as well though regular Corne plates work just fine if you have those already.
 
 # Goals
 
@@ -48,26 +51,6 @@ AKA arbitrary rules I made up for myself
 * Keep solder points and electronics away from the edges
 * On an individual board, diodes all go the same direction
 
-## How did things turn out?
-
-### Branding
-
-I put a bunch of text and links on the panelization. The board itself has a version number real small on the back under the MCU. The panelization text lets me convey the who and what and the version lets you know which board version you're holding in case it matters for the build guide. Otherwise, there are no brand markers on the finished board and there is no text visible on the top of the board once the MCU is in place.
-
-### Trace Limits
-
-There are very few traces on the top, just a few I needed to jump over traces that can't be moved. There is one trace on the top of left hand board that is the least complicated route for the reset line. I'd like to find another route for that but the other options are crazy complicated.
-
-There are a lot of traces on the ish, by necessity, and keeping them all to the back led to a very crowded board. I did my best to limit the risk of crapping up traces on the back during the build but the area around the MCU is so tight that things aren't perfect.
-
-### Soldering Limits
-
-There are no solder points on the top of the board. All the holes are masked off as well to keep anyone from getting a funny idea.
-
-Keeping solder points and pads away from the edge led to a complication discussed below, needing the switches to be in different orientations on the separate halves.
-
-All diodes do in fact go the same direction on each half.
-
 # Questions
 
 ## Why is the nice!nano face up?
@@ -78,6 +61,22 @@ Battery placement, plain and simple. If the nice!nano is chips-up, a 100mah batt
 
 This is the result of a few of the design principles. The Corne v2 and the Corne v3 end up putting diodes and solder pads on the edge of the board on one half because there's no where else for them to go. On the other side, one direction conflicts with the standoff annular ring placement.  So, if I want to keep the diodes and pads away from the board edge and I don't want to move the annular rings, one half of the board must have switches that go the other direction. If I toss my rule against breaking v3 plate compatibility, I'll revisit this.
 
+# BOM
+
+## Required parts that the board was designed around
+
+These parts were specifically used in the design process. If you find other working options, please let me know.
+
+- [Two nice!nano controllers](https://nicekeyboards.com/nice-nano/) soldered with machine pins
+- [Two slide switches](https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825232-1/4021554)
+- [Two lithpoly batteries _with protection circuits_](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1570/5054546) - the protection circuits are really important as the ish has no onboard battery management of its own
+
+## Other bits and bobs
+
+- [Two momentary reset switches](https://www.digikey.com/en/products/detail/c-k/PTS636-SM43-LFS/10071715)
+- [42 diodes](https://www.digikey.com/en/products/detail/comchip-technology/CDSW4148-G/3308608)
+- [Machine pin headers](https://www.amazon.com/gp/product/B0187LTEX2/) that, once installed, are at least 4mm tall to fit the battery
+- Choc v1 switches and caps
 
 # License
 
