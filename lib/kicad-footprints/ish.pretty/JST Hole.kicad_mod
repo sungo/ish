@@ -1,0 +1,13 @@
+(footprint "JST Hole" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 12cad82d-5b05-42e8-bc90-6767387fd285)
+  )
+  (fp_text value "JST Hole" (at 0 1 unlocked) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp a14d6ece-b6e6-46d1-9bef-67fbc730f689)
+  )
+  (pad "" np_thru_hole circle (at 0 0 180) (size 6.25 6.25) (drill 6.25) (layers "F&B.Cu" "*.Mask") (tstamp 7f6d33ab-420b-4402-b58e-0970c46e91e5))
+)
