@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.1,
-          "height": 2.1,
-          "width": 2.1
+          "drill": 1.0,
+          "height": 2.5,
+          "width": 1.7
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -76,7 +76,7 @@
         "footprint": "error",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
-        "hole_near_hole": "error",
+        "hole_near_hole": "ignore",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -94,13 +94,13 @@
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
+        "silk_over_copper": "ignore",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
-        "text_thickness": "warning",
+        "text_height": "ignore",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -404,7 +404,10 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "ish",
+      "kbd"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -529,6 +532,6 @@
   ],
   "text_variables": {
     "PROJECT": "ish",
-    "REVISION": "1.0.0"
+    "REVISION": "1.1.0"
   }
 }
