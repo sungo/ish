@@ -14,16 +14,26 @@ The ish is a Corne-ish split 42-key keyboard, specifically designed for the [nic
 
 The ish has the following features/anti-features:
 
-- Choc v1 key switches _only_
+- Support for _both_ Choc v1 and Cherry MX switches, which can be used at the
+  same time
 - Keys are Cherry MX spaced (I have fat fingers)
 - Designed for battery and bluetooth, via the nice!nano controller
 - Does _not_ have LEDs, underglow or otherwise, nor OLED displays
 - Relatively easy to build
 - Based on the Corne v3
-- Supports [ZMK](https://zmk.dev) exclusively
 
+As of v1.1, the ish is known to work with a regular non-LED non-display Corne
+profile using KMK and ZMK, including as a wired split. It has been tested with
+nice!nano v2 and Adafruit Kee-boar controller.
 
-## Why
+## Controller Warning
+
+If you want to use something other than a nice!nano, do _not_ connect the
+battery. I'm not aware of another pro micro compat controller, other than the
+nice!nano, with battery circuitry. You will most likely fry any other controller
+and probably damage the battery and maybe cause a fire. 
+
+# Why
 
 Well, gotta learn kicad somehow and the Corne is one of my favorite boards. Like all keyboard people though, I have capital-T Thoughts about the Corne so why not learn kicad by tweaking the Corne.
 
@@ -31,7 +41,9 @@ Also to be clear, this is built with me, sungo, in mind. I will be super thrille
 
 ## Just give me the gerbers, dammit
 
-The gerbers for the v1 are available [here](gerbers/ish-1.0.0-gerbers.zip). Top and bottom plates [are available](gerbers/) as well though regular Corne plates work just fine if you have those already.
+The gerbers for the v1.0 are available [here](gerbers/ish-1.0.0-gerbers.zip). Top and bottom plates [are available](gerbers/) as well though regular Corne plates work just fine if you have those already.
+
+Gerbers for v1.1 are coming soon
 
 # Goals
 
@@ -53,7 +65,7 @@ AKA arbitrary rules I made up for myself
 
 # Questions
 
-## Why is the nice!nano face up?
+## Why is the controller face up?
 
 Battery placement, plain and simple. If the nice!nano is chips-up, a 100mah battery fits perfectly under the MCU with a 4mm header easily obtained from Amazon. If the nice!nano is chips down, it does not.
 
@@ -70,13 +82,14 @@ These parts were specifically used in the design process. If you find other work
 - [Two nice!nano controllers](https://nicekeyboards.com/nice-nano/) soldered with machine pins
 - [Two slide switches](https://www.digikey.com/en/products/detail/te-connectivity-alcoswitch-switches/1825232-1/4021554)
 - [Two lithpoly batteries _with protection circuits_](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1570/5054546) - the protection circuits are really important as the ish has no onboard battery management of its own
+- [Two JST connectors](https://www.aliexpress.us/item/2255799843407025.html)
 
 ## Other bits and bobs
 
 - [Two momentary reset switches](https://www.digikey.com/en/products/detail/c-k/PTS636-SM43-LFS/10071715)
 - [42 diodes](https://www.digikey.com/en/products/detail/comchip-technology/CDSW4148-G/3308608)
 - [Machine pin headers](https://www.amazon.com/gp/product/B0187LTEX2/) that, once installed, are at least 4mm tall to fit the battery
-- Choc v1 switches and caps
+- 42 Choc v1 switches and caps / 42 MX switches and caps; chef's choice
 
 # License
 
