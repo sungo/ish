@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.9906,
-          "height": 1.4986,
-          "width": 1.4986
+          "drill": 0.0,
+          "height": 0.8128,
+          "width": 1.8034
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -472,6 +472,14 @@
       {
         "netclass": "Power",
         "pattern": "RAW_R"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VDD"
       }
     ]
   },
